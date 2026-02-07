@@ -6,15 +6,15 @@ The UV Adjustments panel provides fine-grained control over UV positioning after
 
 ## Controls
 
-| Control | Action | Right-Click | Shift |
-|---------|--------|-------------|-------|
-| **Flip** | Flip UVs on the U-axis | — | Flip on V-axis |
-| **Rotate** | Rotate UVs 90 degrees | — | — |
-| **Unitize** | Normalize UVs on the U-axis | — | Unitize on V-axis |
-| **Nudge** | Move UVs in the positive direction | Nudge in opposite direction | Nudge on V-axis |
-| **Scale** | Scale UVs up | Scale down (shrink) | Scale on V-axis |
-| **Grow** | Expand UV shell outward (inset-based) | — | — |
-| **Shrink** | Contract UV shell inward (inset-based) | — | — |
+| Control | Action | Shift |
+|---------|--------|-------|
+| **Flip** | Flip UVs on the U-axis | Flip on V-axis |
+| **Rotate** | Rotate UVs 90 degrees | — |
+| **Unitize** | Normalize UVs on the U-axis | Unitize on V-axis |
+| **Nudge** | Move UVs in the positive direction | Nudge on V-axis |
+| **Scale** | Scale UVs up | Scale on V-axis |
+| **Grow** | Expand UV shell outward (inset-based) | — |
+| **Shrink** | Contract UV shell inward (inset-based) | — |
 
 ## Modifier Keys
 

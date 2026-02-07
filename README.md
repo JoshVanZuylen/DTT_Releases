@@ -47,9 +47,9 @@ See the [full installation guide](docs/installation.md) for toolbar setup, updat
 - [Join the Discord](https://discord.gg/4Ds4asQ94X)
 - [Releases](https://github.com/JoshVanZuylen/DTT_Releases/releases)
 
-## Current Version
+## Releases
 
-**v0.5.0 Alpha** — [Release Notes](https://github.com/JoshVanZuylen/DTT_Releases/releases)
+See the latest version and release notes on the [Releases page](https://github.com/JoshVanZuylen/DTT_Releases/releases).
 
 ---
 

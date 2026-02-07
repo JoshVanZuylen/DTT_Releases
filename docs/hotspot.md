@@ -10,7 +10,7 @@ The Hotspot tool automatically assigns trim sheet regions to faces based on thei
 2. Configure your Hotspot settings (see below).
 3. Click **Run Hotspot**.
 
-Hotspot groups connected faces by angle, measures each island's UV area in world space, and matches it to the closest trim entry by texel density. The result is consistent, properly-scaled trim mapping across your entire selection.
+Hotspot groups connected faces by angle, measures each island's UV area in world space, and projects UVs using either the **Largest Face** normal or a **Target Texel** density match. It then assigns each group to the closest trim entry by size. The result is consistent, properly-scaled trim mapping across your entire selection.
 
 ## Hotspot Settings
 
@@ -40,9 +40,18 @@ Hotspot groups connected faces by angle, measures each island's UV area in world
 | **Trim Group** | Grouping factor for trim assignment |
 | **Overlap Angle** | Maximum angle for overlapping trim regions |
 
-## Material ID Filtering
+## Material ID Assignment
 
-Hotspot can restrict processing to specific material IDs. Only faces with matching material IDs will be processed, leaving the rest untouched. This is useful when you want different trim sets applied to different parts of the same object.
+Use modifier keys when clicking **Run Hotspot** to assign a specific Material ID to the processed faces:
+
+| Modifier | Material ID Applied |
+|----------|-------------------|
+| **Shift + click** | Primary Material ID |
+| **Ctrl + click** | Secondary Material ID |
+| **Alt + click** | Tertiary Material ID |
+| **No modifier** | No Material ID change (uses existing IDs) |
+
+The Primary, Secondary, and Tertiary values are set in the Materials panel and are automatically populated from the loaded trim set's metadata. An **Override** toggle lets you switch between the set's default values and custom override values.
 
 ## Progress & Performance
 

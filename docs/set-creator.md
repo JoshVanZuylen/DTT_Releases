@@ -43,37 +43,7 @@ Select an existing set from the Set dropdown to load its metadata. Make your cha
 
 ## Set Creation Guide
 
-The guide walks you through the full process. Steps vary depending on whether you're creating a **Trim Sheet** or **Mesh Decal** set.
-
-### Shared Steps
-
-**Step 1: Select Category/Style** — Choose your Category/Style/Set name. Naming your set after the texture or material keeps lookups predictable.
-
-**Step 2: Tags & Material IDs** — Add tags to classify your set (e.g. metal, concrete, damage). Set Primary/Secondary/Tertiary Material IDs to match your Multi/Sub-Object material slots.
-
-**Step 3: Setup PBR Material** — Create or assign a PBR material with your textures. At minimum add a Normal map — an Opacity map enables auto-detection in the Mesh Generator.
-
-### Trim Sheet Path
-
-**Step 4: Setup Preview Material** — Create geometry (e.g. 4x4m) and assign the material with the correct Material ID.
-
-**Step 5: Assign Textures** — Plug textures into the PBR material for preview rendering.
-
-**Step 6: Define Trim Edges** — Cut edges along the top/bottom of each trim so rows align with the layout axis. Quads are required — the tool cannot process n-gons.
-
-### Mesh Decal Path — Manual Input Mesh
-
-**Step 4: Create Geometry** — Create geometry and assign the material. Each UV island (element) will become a separate decal in the atlas.
-
-**Step 5: Create Set Data** — Select your object and click Create Mesh Decal Data. The tool automatically detects and separates strip decals (full 0-1 span) from regular mesh decals.
-
-### Mesh Decal Path — Mesh Generator
-
-**Step 4: Open Generator** — Click "Generate Source Mesh" to open the generator overlay. For new sets, select your Multi/Sub material and sub-material slot. For existing sets, material, textures, and bounding boxes load automatically.
-
-**Step 5: Define Bounding Boxes** — Auto-detect decal islands from the texture's opacity, manually draw boxes, or adjust boxes loaded from existing set data.
-
-**Step 6: Create Set Data** — Click "Create Mesh Decal Set Data" in the generator to create meshes and run the standard creation pipeline.
+The Set Creator tab includes a built-in step-by-step guide that walks you through the full creation process. The guide updates dynamically based on whether you're creating a Trim Sheet or Mesh Decal set — follow the numbered steps in the tool to complete your set.
 
 ## Mesh Generator
 
@@ -147,10 +117,13 @@ When creating sets from Multi/Sub-Object materials, PolyWrapper automatically de
 
 ## Icon Rendering
 
-- Set preview icons are rendered at high resolution with full-quality textures.
-- A floating **Icon Preview** panel shows progress during rendering.
-- An ETA timer displays estimated completion time.
-- Cancel at any time during rendering.
+The **Render Style** dropdown controls how set preview icons are generated. Each mode has different requirements and produces different results.
+
+| Render Style | Requirements | Description |
+|-------------|-------------|-------------|
+| **Render Material Previews** | PBR material with 2+ texture maps (e.g. Normal + Roughness) | Renders icons using the Quicksilver hardware renderer with full PBR lighting, ambient occlusion, and shadows. Produces the highest quality previews for materials with multiple maps. Falls back to single-texture rendering if only one map is assigned. |
+| **Render Texture Previews** | At least one texture map | Samples icons directly from the source texture without 3D rendering. Fast and lightweight — best when you just need a clean texture crop without lighting. |
+| **ISO Icon** | Displacement/height map (required), Mesh Decal type only | Renders each decal individually at a 45-degree isometric angle with displacement geometry applied. Showcases surface relief and depth detail. Slower than other modes since each icon is rendered separately. Not available for Trim Sheet or Strip Decal sets. |
 
 ## "All" Category Filter
 

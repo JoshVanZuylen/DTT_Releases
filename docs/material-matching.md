@@ -76,7 +76,7 @@ To manage ignore patterns:
 
 ## Material Scoring Breakdown
 
-Click the **?** button in the Materials panel to see exactly how the system scored each potential match. The breakdown shows:
+The scoring breakdown shows:
 
 - Individual token matches with their source
 - Token weights and how they contributed to the total score
@@ -102,7 +102,6 @@ For a set named `T_MeshDecals_a` with scene materials `T_PanelTrim_a` and `Scifi
 - **Add common prefixes** like `T_` and `M_` to ignore patterns
 - **Use CamelCase** for better token separation (`PanelTrim` splits better than `paneltrim`)
 - **Variation patterns** (`_a`, `_b`, `_c`) identify which slot is Primary/Secondary/Tertiary
-- **Enable debug logging** in Options to see detailed matching scores in the console
 
 ---
 

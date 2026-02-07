@@ -1,6 +1,6 @@
 # Options & Theming
 
-The Options tab gives you full control over PolyWrapper's appearance, behavior, and module configuration. The theming system is one of PolyWrapper's standout features — every tab can have its own color identity with animated backgrounds.
+The Options tab gives you full control over PolyWrapper's appearance, behavior, and module configuration. Every tab can have its own color identity with animated backgrounds.
 
 ![Options tab — UI Customisation with per-tab color settings](Images/Options_%20(2).png)
 

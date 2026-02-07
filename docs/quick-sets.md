@@ -10,7 +10,7 @@ Click any Quick Set button to load that set. This clears the current view and di
 
 ## Multi-Set Mode
 
-Multi-Set mode is enabled by default in v0.5.0 and allows loading multiple sets at once for side-by-side comparison and mixed workflows.
+Multi-Set mode allows loading multiple sets at once for side-by-side comparison and mixed workflows.
 
 ### Loading Multiple Sets
 
@@ -38,10 +38,6 @@ Toggle between views with the List/Tile button. In tile mode, adjust the column 
 ### Per-Set Hotspot Processing
 
 In multi-set mode within the Trim Sheet tab, each loaded set gets its own **Run Hotspot** button. Process hotspots for each set independently without affecting the others.
-
-## Pre-Loading
-
-Quick Sets that have been assigned are pre-loaded at startup, so switching between previously viewed sets is instant.
 
 ---
 

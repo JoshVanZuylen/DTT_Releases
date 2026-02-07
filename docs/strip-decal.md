@@ -79,10 +79,6 @@ After creating a strip, use the Strip Adjustments panel to fine-tune it:
 - **Smart UV splitting** at sharp corners to prevent texture stretching
 - **UV compensation** ensures clean texture alignment at corners and strip ends
 
-## Object Naming
-
-Strip decals are named with the `MDSD_` prefix (e.g., `MDSD_Pillar_Geo_000`) and the next number is auto-detected from existing strips in the scene.
-
 ---
 
 [Back to Home](../README.md) | [UV Adjustments](uv-adjustments.md) | [Set Creator](set-creator.md)

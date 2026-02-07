@@ -18,7 +18,7 @@ Yes. Your license automatically transfers between Max versions on the **same PC*
 
 ### My license shows as activated on another machine
 
-Deactivate the license on the other machine first via the About tab. If you no longer have access to that machine, the license will auto-transfer when it detects you're on the same PC (matching hostname).
+Deactivate the license on the other machine first via the About tab. If you no longer have access to that machine, you can force-activate the license on your new PC — this automatically releases the previous activation.
 
 ### Activation fails at my studio
 
@@ -40,6 +40,8 @@ Check your settings:
 - **Angle Threshold** controls how faces are grouped — lower values create more, smaller groups
 - **Inset** prevents texture bleeding at UV edges — try 0 if trims look cut off
 
+Hotspot is a complex tool and we're always working to improve it. If you have feedback or run into issues, please visit the [Discord](https://discord.gg/4Ds4asQ94X).
+
 ## Mesh Decals
 
 ### Auto-Conform is not available
@@ -54,10 +56,7 @@ Adjust the **Scale** spinner before placing, or use **Ctrl + drag** during place
 
 ### Shift+click isn't adding sets
 
-Multi-Set mode must be enabled. In v0.5.0 it's on by default, but if you've disabled it:
-1. Open the **Options** tab
-2. Look for **Multi-Set mode** in the settings
-3. Enable it and restart PolyWrapper
+Make sure you're holding Shift before clicking the Quick Set button. A normal click loads a single set exclusively, while Shift+click adds or removes sets from the multi-set view.
 
 ### Material IDs aren't displaying in multi-set mode
 
@@ -78,10 +77,6 @@ If you intentionally installed an older version, auto-update should have disable
 Check your [maintenance window](licensing.md). If your maintenance has expired, you can't update to releases published after your window ended. Purchase a Maintenance key to extend your eligibility.
 
 ## General
-
-### The UI looks wrong or fonts are broken
-
-PolyWrapper uses its own font (Trebuchet MS) that's isolated from the Max UI. If something looks off, try closing and reopening the tool, or restarting Max.
 
 ### Where can I get help?
 

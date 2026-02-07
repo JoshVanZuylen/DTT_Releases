@@ -82,11 +82,7 @@ Swapping works in:
 
 ## Preview Scale
 
-The **Preview Scale** slider controls the size of decal thumbnails in the grid. Click **Auto** to auto-fit thumbnails so they fill the available space without scrolling.
-
-## Object Naming
-
-Placed decals are named with the `MD_` prefix (e.g., `MD_Decal001`) and given a grey wire color for easy identification in the scene.
+The **Preview Scale** draggable handle controls the size of decal thumbnails in the grid. Double-click the handle to auto-fit thumbnails so they fill the available space without scrolling.
 
 ---
 

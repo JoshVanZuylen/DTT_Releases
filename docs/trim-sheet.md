@@ -24,11 +24,11 @@ PolyWrapper offers two projection methods when applying trims:
 | **Average Normal** | Projects along the average normal of the selected faces | Flat or gently curved surfaces |
 | **Longest Edge** | Aligns projection using the longest edge direction | Elongated strips, consistent alignment |
 
-You can switch between methods in the Hotspot Settings panel.
+Switch between methods using the dropdown in the set window.
 
 ## Axis Orientation
 
-Trims can be oriented **horizontally** or **vertically** on the trim sheet. Toggle the axis to match how your trims are laid out in the texture.
+Trims can be oriented **horizontally** or **vertically** on the trim sheet. This is defined during the [set creation](set-creator.md) process when you choose the Layout Type (Horizontal / Vertical).
 
 ## Multi-Group Projection
 
