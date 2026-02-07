@@ -62,7 +62,7 @@ If your maintenance is expiring soon (within 7 days), PolyWrapper will show a no
 Some firewalls block the license verification request. PolyWrapper has a fallback network method for these situations — if the first attempt fails, it automatically retries with an alternative approach.
 
 **License shows as activated on another machine:**
-Deactivate the license on the other machine first, or if you no longer have access to it, the activation will auto-transfer if it detects you're on the same PC (same hostname).
+Deactivate the license on the other machine first. If you no longer have access to that machine, you can force-activate the license on your new PC — this automatically releases the previous activation.
 
 ---
 
