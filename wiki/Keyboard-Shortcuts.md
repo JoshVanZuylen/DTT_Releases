@@ -58,7 +58,7 @@ Complete reference of all keyboard and mouse shortcuts in Wrapper.
 | Assign Alt material ID | Alt + click Run Hotspot |
 | No material ID change | Click Run Hotspot (no modifier) |
 
-## Set Creator Browser
+## Set Manager Browser
 
 | Action | Control |
 |--------|---------|

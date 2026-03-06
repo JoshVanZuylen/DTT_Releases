@@ -87,4 +87,4 @@ After creating a strip, use the Strip Adjustments panel to fine-tune it:
 
 ---
 
-[[Home]] | [[UV-Adjustments|UV Adjustments]] | [[Set-Creator|Set Creator]]
+[[Home]] | [[UV-Adjustments|UV Adjustments]] | [[Set-Creator|Set Manager]]

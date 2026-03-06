@@ -113,4 +113,4 @@ The **Preview Scale** draggable handle controls the size of decal thumbnails in 
 
 ---
 
-[[Home]] | [[UV-Adjustments|UV Adjustments]] | [[Set-Creator|Set Creator]]
+[[Home]] | [[UV-Adjustments|UV Adjustments]] | [[Set-Creator|Set Manager]]

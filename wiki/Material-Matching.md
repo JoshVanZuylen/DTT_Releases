@@ -105,4 +105,4 @@ For a set named `T_MeshDecals_a` with scene materials `T_PanelTrim_a` and `Scifi
 
 ---
 
-[[Home]] | [[Set-Creator|Set Creator]] | [[Trim-Sheet|Trim Sheet]]
+[[Home]] | [[Set-Creator|Set Manager]] | [[Trim-Sheet|Trim Sheet]]

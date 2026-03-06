@@ -67,7 +67,7 @@ Each tab has its own row showing:
 - **Background color** — optional per-tab background tint. Click **Custom background colour** to set a unique background for each tab.
 - **Custom button colours** — toggle to enable per-tab button styling with separate normal and pressed state colors.
 
-Tabs listed: Trim Sheets, Mesh Decal, Strip Decals, Set Creator, Options, About, Materials, Assistant.
+Tabs listed: Trim Sheets, Mesh Decal, Strip Decals, Set Manager, Options, About, Materials, Assistant.
 
 ### Background
 

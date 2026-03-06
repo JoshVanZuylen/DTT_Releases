@@ -1,8 +1,8 @@
-# Set Creator
+# Set Manager
 
-The Set Creator lets you build and manage your own decal and trim sheet asset libraries. It has two views: a **Set Library** browser for browsing and managing sets, and a **Set Editor** for creating and editing sets.
+The Set Manager lets you build and manage your own decal and trim sheet asset libraries. It has two views: a **Set Library** browser for browsing and managing sets, and a **Set Editor** for creating and editing sets.
 
-![Set Creator tab with creation form and step-by-step guide](images/Set-Creator.png)
+![Set Manager tab with creation form and step-by-step guide](images/Set-Creator.png)
 
 ## Asset Tree Structure
 
@@ -97,11 +97,11 @@ The **Render Style** dropdown controls how set preview icons are generated. Icon
 
 ## Set Creation Guide
 
-The Set Creator tab includes a built-in step-by-step guide that walks through the full creation process. The guide updates dynamically based on whether you're creating a Trim Sheet or Mesh Decal set.
+The Set Manager tab includes a built-in step-by-step guide that walks through the full creation process. The guide updates dynamically based on whether you're creating a Trim Sheet or Mesh Decal set.
 
 ## Mesh Generator
 
-Click **Generate MeshDecal Source Mesh** on the Set Creator tab to open the Mesh Generator overlay.
+Click **Generate MeshDecal Source Mesh** on the Set Manager tab to open the Mesh Generator overlay.
 
 ![Mesh Generator canvas with detected bounding boxes](images/MeshGenerator.png)
 

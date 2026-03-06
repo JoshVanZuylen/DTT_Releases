@@ -28,7 +28,7 @@ See the [full installation guide](https://github.com/JoshVanZuylen/Wrapper_Relea
 | [Hotspot](https://github.com/JoshVanZuylen/Wrapper_Releases/wiki/Hotspot) | Auto-assign trims to geometry based on face size and texel density |
 | [Mesh Decal](https://github.com/JoshVanZuylen/Wrapper_Releases/wiki/Mesh-Decal) | Interactive point-and-click decal placement with real-time surface conforming |
 | [Strip Decal](https://github.com/JoshVanZuylen/Wrapper_Releases/wiki/Strip-Decal) | Generate continuous trim and edge detail meshes along selected edges |
-| [Set Creator](https://github.com/JoshVanZuylen/Wrapper_Releases/wiki/Set-Creator) | Build and manage your own decal and trim sheet asset libraries |
+| [Set Manager](https://github.com/JoshVanZuylen/Wrapper_Releases/wiki/Set-Creator) | Build and manage your own decal and trim sheet asset libraries |
 | [Quick Sets](https://github.com/JoshVanZuylen/Wrapper_Releases/wiki/Quick-Sets) | Preset slots for fast set switching, with multi-set side-by-side viewing |
 | [UV Adjustments](https://github.com/JoshVanZuylen/Wrapper_Releases/wiki/UV-Adjustments) | Flip, rotate, nudge, scale, and grow/shrink UVs with smooth animations |
 | [Material Matching](https://github.com/JoshVanZuylen/Wrapper_Releases/wiki/Material-Matching) | Automatic scene material matching using token-based scoring |

@@ -11,7 +11,7 @@
 - [[Hotspot]]
 - [[Mesh-Decal|Mesh Decal]]
 - [[Strip-Decal|Strip Decal]]
-- [[Set-Creator|Set Creator]]
+- [[Set-Creator|Set Manager]]
 
 **Reference**
 - [[Quick-Sets|Quick Sets]]
