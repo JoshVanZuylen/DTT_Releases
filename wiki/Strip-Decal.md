@@ -27,9 +27,12 @@ Best for: trim lines, panel gaps, surface details, flat decals.
 
 ### EDGE
 
-A 3-vertex beveled edge with each segment creating 2 quad faces. Creates the look of a chamfered or raised edge.
+A 3-vertex beveled edge strip that follows both adjacent surfaces at a selected edge. The left half of the strip conforms to one face and the right half to the other, creating a true beveled edge.
 
-> **Note:** Edge Profile is currently in development and will be available in a future update.
+- Strip width is maintained through corners and turns without tapering.
+- Sharp corners produce clean miter joints instead of pinched or overlapping geometry.
+- UVs split at sharp corners with compensation applied at boundaries so textures align correctly across segments.
+- Respects smoothing group boundaries when **Split at Hard Edges** is enabled, aligning to perpendicular mesh edges at hard edge boundaries.
 
 ## Settings
 
@@ -63,6 +66,8 @@ Set the strip width in world units (e.g. `5.0 cm`). Choose from preset values in
 
 The Strip Decal tab includes its own [[UV-Adjustments]] panel with the same controls as the Trim Sheet tab — Flip, Rotate, Unitize, Nudge, Scale, Grow, and Shrink. All modifier keys work the same way.
 
+Ctrl+Z undoes UV rescaling performed via the width scale slider.
+
 ## Strip Adjustments
 
 After creating a strip, use the Strip Adjustments panel to fine-tune it:
@@ -70,14 +75,15 @@ After creating a strip, use the Strip Adjustments panel to fine-tune it:
 | Control | Description |
 |---------|-------------|
 | **Push** | Slider to adjust the strip's offset from the surface after creation |
-| **Scale** | Slider to rescale the strip width after creation |
+| **Scale** | Slider to rescale the strip width after creation — works correctly on multi-segment and curved strips, including the first and last edge ring at endpoints |
 | **Remove Edges** | Removes the selected edges from the strip |
 
 ## UV Features
 
 - **Automatic UV mapping** that maintains proper texel density along the strip length
-- **Smart UV splitting** at sharp corners to prevent texture stretching
+- **Smart UV splitting** at sharp corners to prevent texture stretching — the **Split Angle** toggle (0–180°, default 25°) controls when splits occur
 - **UV compensation** ensures clean texture alignment at corners and strip ends
+- Body faces unwrap as perfect rectangles regardless of the angle of end-cap faces on either side
 
 ---
 

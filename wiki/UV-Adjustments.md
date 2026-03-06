@@ -41,6 +41,19 @@ When you click multiple UV operations quickly:
 - Button labels show queue position (e.g., "Queued (1)", "Queued (2)") when actions are waiting.
 - **Nudge** and **Scale** wait until queued actions finish, keeping results consistent and repeatable.
 
+## Undo / Redo
+
+All UV adjustment operations support undo and redo:
+
+- **Ctrl+Z** restores UVs after any UV adjustment operation — Flip, Rotate, Nudge, Scale, Unitize, Grow/Shrink.
+- **Ctrl+Y** re-applies the undone operation.
+- Multiple undo/redo steps work reliably in sequence.
+- Slider-based operations (nudge drag, scale drag) undo the entire drag as one step.
+- Decal swap (right-click thumbnail) is also undoable.
+- Strip width rescaling via the scale slider is undoable.
+
+> **Note:** Trim projection and Hotspot operations are not undoable.
+
 ## Smooth Animations
 
 UV transforms animate smoothly by default. You can:

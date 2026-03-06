@@ -1,10 +1,10 @@
-# PolyWrapper
+# Wrapper
 
 **Professional decal placement and trim sheet workflows for 3ds Max.**
 
-PolyWrapper gives 3D artists a complete toolkit for applying trim sheets, placing mesh decals, and generating strip details — all from a single, themeable interface inside 3ds Max.
+Wrapper gives 3D artists a complete toolkit for applying trim sheets, placing mesh decals, and generating strip details — all from a single, themeable interface inside 3ds Max.
 
-![PolyWrapper — Trim Sheet tab with multi-set Quick Sets](images/TrimSheets.png)
+![Wrapper — Trim Sheet tab with multi-set Quick Sets](images/TrimSheets.png)
 
 ## Supported Versions
 
@@ -14,8 +14,8 @@ PolyWrapper gives 3D artists a complete toolkit for applying trim sheets, placin
 
 ## Quick Install
 
-1. Extract the `PolyWrapper_<version>_Max<YYYY>` folder that matches your Max version to a stable location.
-2. Open 3ds Max and drag `PolyWrapper_MacroInstaller.ms` into the viewport.
+1. Extract the `Wrapper_<version>_Max<YYYY>` folder that matches your Max version to a stable location.
+2. Open 3ds Max and drag `Wrapper_MacroInstaller.ms` into the viewport.
 3. The tool launches automatically on first install.
 
 See the [[Installation]] page for toolbar setup, updates, and troubleshooting.
@@ -45,7 +45,7 @@ See the [[Installation]] page for toolbar setup, updates, and troubleshooting.
 
 - [Purchase on Gumroad](https://joshvanzuylen.gumroad.com/l/mwktte)
 - [Join the Discord](https://discord.gg/4Ds4asQ94X)
-- [Releases](https://github.com/JoshVanZuylen/DTT_Releases/releases)
+- [Releases](https://github.com/JoshVanZuylen/Wrapper_Releases/releases)
 
 ---
 

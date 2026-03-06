@@ -1,6 +1,6 @@
 # Options & Theming
 
-The Options tab gives you full control over PolyWrapper's appearance, behavior, and module configuration. Every tab can have its own color identity with animated backgrounds.
+The Options tab gives you full control over Wrapper's appearance, behavior, and module configuration. Every tab can have its own color identity with animated backgrounds.
 
 ![Options tab — UI Customisation with per-tab color settings](images/Options-2.png)
 
@@ -15,10 +15,20 @@ The Options tab gives you full control over PolyWrapper's appearance, behavior, 
 
 | Button | Description |
 |--------|-------------|
-| **PolyWrapper Help** | Opens the documentation |
+| **Wrapper Help** | Opens the documentation |
 | **Open Data Directory** | Opens the folder where your set data is stored |
-| **Open Install Directory** | Opens PolyWrapper's install location |
-| **Launch PolyWrapper at 3ds Max startup** | Toggle to auto-launch when Max starts |
+| **Open Install Directory** | Opens Wrapper's install location |
+| **Launch Wrapper at 3ds Max startup** | Toggle to auto-launch when Max starts |
+| **Uninstall Wrapper** | Cleanly removes Wrapper from 3ds Max (disabled in development mode) |
+
+### Uninstalling Wrapper
+
+The **Uninstall Wrapper** button walks you through a two-step confirmation:
+
+1. Confirm you want to uninstall.
+2. Optionally remove your preferences and set data.
+
+The uninstaller removes the startup script, toolbar macro, Max directory registration, license data, and the install folder, then shows a summary of what was removed before closing the tool window.
 
 ## UI Customisation
 
@@ -34,7 +44,7 @@ Choose where the tool tabs appear:
 
 ### UI Theme
 
-PolyWrapper ships with several built-in color presets that completely restyle the interface:
+Wrapper ships with several built-in color presets that completely restyle the interface:
 
 | Preset | Description |
 |--------|-------------|
@@ -47,19 +57,24 @@ PolyWrapper ships with several built-in color presets that completely restyle th
 | **Maker** | Mixed colors with a workshop/maker aesthetic |
 | **Custom** | Your own saved configuration |
 
-Select a preset from the **Themes** dropdown and it applies immediately. Click **Save theme** to save your current configuration as the Custom preset.
+Select a preset from the **Themes** dropdown and it applies immediately. Click **Save theme** to save your current configuration as the Custom preset. Click **Delete** next to Save theme to remove a saved preset.
 
 ### Per-Tab Color Customization
 
 Each tab has its own row showing:
 
-- **Tab accent color** — the main color swatch (e.g. `rgb(204,97,20)` for Trim Sheets). Click to change. Controls title bars, toggles, spinners, and borders for that tab.
+- **Tab accent color** — the main color swatch. Click to change. Controls title bars, toggles, spinners, and borders for that tab.
 - **Background color** — optional per-tab background tint. Click **Custom background colour** to set a unique background for each tab.
 - **Custom button colours** — toggle to enable per-tab button styling with separate normal and pressed state colors.
 
-Tabs listed: Trim Sheets, Mesh Decal, Strip Decals, Set Creator, Options, About.
+Tabs listed: Trim Sheets, Mesh Decal, Strip Decals, Set Creator, Options, About, Materials, Assistant.
 
 ### Background
+
+The **Use background texture** and **Use UI theme background** toggles are linked:
+- Disabling "Use background texture" automatically disables "Use UI theme background".
+- Enabling "Use UI theme background" automatically enables "Use background texture".
+- When both are off, the background reverts to the default neutral colour.
 
 | Setting | Description |
 |---------|-------------|
@@ -69,6 +84,13 @@ Tabs listed: Trim Sheets, Mesh Decal, Strip Decals, Set Creator, Options, About.
 | **Background opacity (%)** | How visible the background texture is (0–100) |
 | **Button opacity (%)** | Transparency of tool buttons (0–100) |
 | **Tab bar texture opacity (%)** | Transparency of the tab bar background (0–100) |
+
+## Decals
+
+| Setting | Description |
+|---------|-------------|
+| **Wire colour** | Custom wire colour for all created decals (default: orange). Applies to both Mesh Decals and Strip Decals |
+| **Use object colour** | When enabled, new decals automatically inherit the wire colour of the mesh they are placed on |
 
 ## Material Assignment Settings
 
@@ -92,9 +114,10 @@ Advanced Trim Sheet options:
 
 | Setting | Description |
 |---------|-------------|
-| **Skip triangles on quad trimming** | Ignores triangle faces when processing quad-based trim operations |
 | **Fast Unwrap (Experimental)** | Enables a faster UV unwrapping algorithm |
 | **Auto-apply cached material** | Automatically applies the cached material when loading a set |
+
+> **Note:** The "Skip tris and n-gons" toggle has moved to the **Trim Settings** panel on the Trim Sheet tab for easier access.
 
 ---
 

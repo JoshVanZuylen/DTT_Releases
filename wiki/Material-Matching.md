@@ -1,6 +1,6 @@
 # Material Matching
 
-PolyWrapper automatically matches your scene materials to loaded asset sets using a token-based scoring system. When you load a trim or decal set, the tool scans your scene's materials and assigns the best match — so your textures show up correctly without manual material ID setup.
+Wrapper automatically matches your scene materials to loaded asset sets using a token-based scoring system. When you load a trim or decal set, the tool scans your scene's materials and assigns the best match — so your textures show up correctly without manual material ID setup.
 
 ![Material Assignment Settings on the Options tab](images/Options-4.png)
 
@@ -42,7 +42,7 @@ The system follows these processing steps:
 
 ![Material Variation Patterns configuration](images/Options-3.png)
 
-Variation patterns tell PolyWrapper how to identify which sub-material slot (Primary, Secondary, Tertiary) a material belongs to. These are configured in the **Material Variation Patterns** section of the Options tab.
+Variation patterns tell Wrapper how to identify which sub-material slot (Primary, Secondary, Tertiary) a material belongs to. These are configured in the **Material Variation Patterns** section of the Options tab.
 
 ### Pattern Packs
 

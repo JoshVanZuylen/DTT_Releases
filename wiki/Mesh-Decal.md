@@ -10,7 +10,7 @@ The Mesh Decal tool lets you place decal geometry directly onto surfaces with an
 
 | Setting | Description |
 |---------|-------------|
-| **Scale** | Size of the placed decal (accepts values down to 0.001 for micro-detail) |
+| **Scale** | Size of the placed decal (accepts values down to 0.001 for micro-detail). Displayed with unit labels (e.g. "5 cm") |
 | **Push** | Offset distance from the surface to prevent z-fighting |
 
 ## Placement Modes
@@ -35,6 +35,8 @@ The Mesh Decal tool lets you place decal geometry directly onto surfaces with an
 4. **Left-click** to place the decal.
 5. **Right-click** or **Esc** to cancel placement.
 
+> **Note:** Clicking a different thumbnail while placement is active cancels the current placement and starts fresh with the new decal.
+
 ## Mouse Controls
 
 | Action | Control |
@@ -52,33 +54,58 @@ The Mesh Decal tool lets you place decal geometry directly onto surfaces with an
 
 | Option | Description |
 |--------|-------------|
-| **Align to Edge** | Auto-rotates the decal to align with the longest face edge |
+| **Align to Edge** | Auto-rotates the decal to align with the longest face edge — locks to the polygon's longest boundary edge and stays stable as the cursor moves |
 | **Align to UV** | Aligns to the UV direction for more stable results on complex topology |
 
 Both options are enabled by default. Manual rotation (Shift + drag) works on top of alignment.
 
 ## Conform
 
-PolyWrapper automatically detects whether the surface under the decal is flat or curved:
+Wrapper automatically detects whether the surface under the decal is flat or curved:
 
 - **Flat surfaces:** The decal stays as a simple quad for best performance.
 - **Curved surfaces:** A subdivided version is used and conforms to the surface curvature.
 
 | Setting | Description |
 |---------|-------------|
-| **Auto-Conform** | Conform distance value — controls how strongly the decal wraps to the surface |
+| **Auto-Conform** | Conform distance value — controls how strongly the decal wraps to the surface. Enabled by default. |
 | **Auto-Optimize** | Percentage threshold for optimizing the conform mesh |
-| **Subdivision** | Number of subdivisions for the conform mesh — higher values conform more smoothly to curved surfaces |
+| **Subdivision** | Number of subdivisions for the conform mesh (up to 20) — higher values conform more smoothly to curved surfaces. Defaults to 12. |
 
 > **Note:** Auto-Conform requires 3ds Max 2024.2 or later. On older builds, it is automatically disabled and decals are placed as flat quads.
 
+Curvature detection scales with decal size — small decals on curved surfaces correctly activate conform.
+
+## Smart Instances
+
+When **Smart Instances** is enabled, placing a decal on an instanced or referenced object automatically creates the same decal on every other instance in the scene.
+
+- All created decals are true instances of each other — editing one updates all of them.
+- Each decal is correctly positioned relative to its target instance, even when instances are rotated or scaled differently.
+- Decals are parented to their respective target instances following the current **Link Type** setting.
+
+## Smart Modifiers
+
+Mesh Decals adopt certain modifiers as instances when you create them — this includes **Symmetry**, **Chamfer**, **Array**, **Smooth**, and **Bend**. Decals behave the same way as your source mesh.
+
+- Modifier gizmos (Symmetry, Array, Bend) align correctly — the decal's pivot is matched to the source object before modifiers are applied.
+- Chamfer modifiers using "From Material ID" with "Edge Verts Selected" are automatically excluded.
+- **Link to Object** and **Link to Parent** are preserved after Smart Modifiers are applied.
+
+## Isolation Mode
+
+Decal placement respects 3ds Max isolation mode — only visible objects receive placements. Hidden and frozen objects are excluded from placement raycasting.
+
 ## Decal Swapping
 
-With a placed decal selected in the viewport, click a different thumbnail to **swap** it. PolyWrapper preserves consistent scaling and adjusts to the new decal's UV aspect ratio.
+With placed decals selected in the viewport, click a different thumbnail to **swap** them. Wrapper preserves consistent scaling and adjusts to the new decal's UV aspect ratio.
+
+- **Right-click** a thumbnail to swap multiple selected decals at once — each decal maintains its own size and position, only the texture and material are replaced.
+- Swapping works on decals with Smart Modifiers (e.g. Symmetry).
 
 Swapping works in:
 - **Object mode** — when the decal is a simple 4-vertex quad
-- **Face mode** — when you have quad faces selected
+- **Face mode** — when you have quad faces selected (supports multiple quads across several decals in a combined mesh)
 
 ## Preview Scale
 

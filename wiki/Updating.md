@@ -1,6 +1,6 @@
 # Updating
 
-PolyWrapper includes a built-in auto-updater on the **About** tab. You can also update manually at any time.
+Wrapper includes a built-in auto-updater on the **About** tab. You can also update manually at any time.
 
 ![About tab showing Version Status and update controls](images/About.png)
 
@@ -10,9 +10,9 @@ The About tab shows your current version and Max version (e.g. "2026 Alpha v0.5.
 
 ## Auto-Update
 
-The **Auto-Update** toggle on the About tab controls whether PolyWrapper automatically downloads and installs updates. When enabled:
+The **Auto-Update** toggle on the About tab controls whether Wrapper automatically downloads and installs updates. When enabled:
 
-1. PolyWrapper checks for updates on launch.
+1. Wrapper checks for updates on launch.
 2. If a newer version is found, it downloads and installs automatically.
 3. The tool reloads after a successful update.
 4. Release notes pop up so you can see what's new.
@@ -27,7 +27,7 @@ The About tab provides three buttons:
 |--------|-------------|
 | **Check for Updates** | Manually check if a newer version is available |
 | **Show Release Notes** | View release notes for the current version |
-| **Reload Tool** | Reload PolyWrapper without restarting Max |
+| **Reload Tool** | Reload Wrapper without restarting Max |
 
 ## Updating from the About Tab
 
@@ -35,16 +35,16 @@ The About tab provides three buttons:
 2. If a newer version is available, a dropdown appears with compatible releases for your Max version.
 3. Select a version and click to install.
 4. A progress bar shows download and installation progress.
-5. PolyWrapper automatically reloads after installation.
+5. Wrapper automatically reloads after installation.
 
 ## Manual Update via Download
 
 If you prefer to update by downloading directly:
 
-1. Visit the [Releases page](https://github.com/JoshVanZuylen/DTT_Releases/releases) (or click **Download Releases** on the About tab).
+1. Visit the [Releases page](https://github.com/JoshVanZuylen/Wrapper_Releases/releases) (or click **Download Releases** on the About tab).
 2. Download the zip matching your Max version.
 3. Extract it to the same location as your current install (or a new location).
-4. Drag `PolyWrapper_MacroInstaller.ms` into the Max viewport to register the new path.
+4. Drag `Wrapper_MacroInstaller.ms` into the Max viewport to register the new path.
 
 ## Downgrade Protection
 
@@ -60,7 +60,7 @@ The About tab also provides quick links to:
 
 | Link | Destination |
 |------|-------------|
-| **Documentation** | Opens the PolyWrapper documentation |
+| **Documentation** | Opens the Wrapper documentation |
 | **Download Releases** | GitHub releases page |
 | **Discord** | Community Discord server |
 | **Bug Reports** | Bug report channel on Discord |

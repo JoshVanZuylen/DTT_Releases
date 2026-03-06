@@ -1,17 +1,18 @@
 # Keyboard Shortcuts
 
-Complete reference of all keyboard and mouse shortcuts in PolyWrapper.
+Complete reference of all keyboard and mouse shortcuts in Wrapper.
 
 ## Mesh Decal Placement
 
 | Action | Control |
 |--------|---------|
 | Place decal | Left-click |
-| Cancel placement | Right-click / Esc |
+| Cancel placement / cancel active placement | Right-click / Esc |
 | Scale | Ctrl + drag |
 | Free rotation | Shift + drag |
 | 45-degree stepped rotation | Ctrl + Shift + drag |
 | Precision mode (10x finer) | Hold Alt |
+| Swap multiple selected decals | Right-click thumbnail |
 
 ## UV Adjustments
 
@@ -28,6 +29,8 @@ Complete reference of all keyboard and mouse shortcuts in PolyWrapper.
 | Unitize on U-axis | Click Unitize |
 | Unitize on V-axis | Shift + click Unitize |
 | Rotate 90 degrees | Click Rotate |
+| Undo UV operation | Ctrl+Z |
+| Redo UV operation | Ctrl+Y |
 
 ## Sliders
 
@@ -36,6 +39,7 @@ Complete reference of all keyboard and mouse shortcuts in PolyWrapper.
 | Start dragging | Click anywhere on slider |
 | Fine adjustment | Alt + drag |
 | Inverse operation | Right-click drag |
+| Reset slider | Double-click |
 | Auto-fit preview scale | Double-click Preview Scale slider |
 
 ## Quick Sets
@@ -45,11 +49,31 @@ Complete reference of all keyboard and mouse shortcuts in PolyWrapper.
 | Load single set | Click Quick Set button |
 | Add/remove set (multi-set mode) | Shift + click Quick Set button |
 
-## Hotspot (Multi-Set Mode)
+## Hotspot (Material ID Assignment)
 
 | Action | Control |
 |--------|---------|
-| Process with material IDs | Shift + click Run Hotspot |
+| Assign Shift material ID | Shift + click Run Hotspot |
+| Assign Ctrl material ID | Ctrl + click Run Hotspot |
+| Assign Alt material ID | Alt + click Run Hotspot |
+| No material ID change | Click Run Hotspot (no modifier) |
+
+## Set Creator Browser
+
+| Action | Control |
+|--------|---------|
+| Select multiple sets | Ctrl + click |
+
+## Mesh Generator (Trim Sheet / Hotspot mode)
+
+| Action | Control |
+|--------|---------|
+| Place a new line | Click on empty space |
+| Reposition a line | Drag existing line |
+| Delete a line or segment | Ctrl + click |
+| Place a secondary line (partial span) | Ctrl + Shift + click |
+| Split secondary line into segments | Double-click |
+| Unsplit back to full-span | Double-click a split line |
 
 ---
 
